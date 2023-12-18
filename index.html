@@ -81,6 +81,59 @@
                 <li><a href="neon.html"">Neon style</a></li>
             </ol>
         </section>
+
+        <section>
+            <h2>Забронировать</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <fieldset>
+                    <!-- <legend type="hidden"></legend> -->
+                    <label for="vibes"><input type="radio" name="hall" value="vibes" id="vibes">80`s vibes</label>
+                    <label for="starwars"><input type="radio" name="hall" value="starwars" id="starwars">Star wars</label>
+                    <label for="wildwest"><input type="radio" name="hall" value="wildwest" id="wildwest">Wild west</label>
+                    <label for="neon"><input type="radio" name="hall" value="neon" id="neon">Neon style</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Собери набор развлечений</legend>
+                    
+                    <fieldset>
+                        <legend>Приставка:</legend>
+                        <label ><input type="radio" name="console" value="playStation" id="playStation">PlayStation</label>
+                        <label ><input type="radio" name="console" value="sega" id="sega">Sega Mega Drive</label>
+                        <label ><input type="radio" name="console" value=" x-box" id="x-box"> X-box One S</label>
+                        <label ><input type="radio" name="console" value="dendy" id="dendy">Dendy</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Настольные игры:</legend>
+                        <label for=""><input type="checkbox" name="tablegames" value="jenga" id="jenga">Jenga</label>
+                        <label for=""><input type="checkbox" name="tablegames" value="monopoly" id="monopoly">Monopoly</label>
+                        <label for=""><input type="checkbox" name="tablegames" value="manchkin" id="manchkin">Манчкин</label>
+                        <label for=""><input type="checkbox" name="tablegames" value="alias" id="alias">Alias</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Дополнительно:</legend>
+                        <label><input type="checkbox" name="add" value="karaoke" id="karaoke">Караоке</label>
+                        <label><input type="checkbox" name="add" value="vr" id="vr">VR</label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Выбери дату и время</legend>
+                    <label for="">Дата*<input type="date" value="date" id="date" required></label>
+                    <label for="">Время*<input type="time" value="time" id="time" required></label>
+                    <br>
+                    <label for="">Количество человек*<input type="number" value="amount" id="amount" required></label>
+                    <br>
+                    <label for="">Имя*<input type="text"  id="name" name="name" required ></label>
+                    <br>
+                    <label for="">Фамилия*<input type="text" id="surname" name="surname" required></label>
+                    <br>
+                    <label for="">Номер телефона*<input type="tel" name="tel" id="tel" required></label><br>
+                    <label for=""><input type="checkbox" name="agreement1" id="agreement2" required> Я старше 18 лет</label>
+                </fieldset>
+                <button>Забронировать</button>
+                <label for="|"><input type="checkbox" name="agreement2" id="agreement1" required>Согласен на обработку данных</label>
+            </form>
+        </section>
         <section id="about">
             <h2>O нас</h2>
             <p>
@@ -89,7 +142,7 @@
             <p>
                 Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
             </p>
-        
+<label for="">        </label>
             <blockquote>
                 <p>
                     <strong>GAME OVER</strong> - это место незабываемых впечатлений.
