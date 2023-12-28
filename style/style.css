@@ -6,13 +6,12 @@ body {
     background-color: #1B1A1B;
     color: #FFFFFF;
 }
-
-blockquote :first-child {
+.upper{
     text-transform: uppercase;
 }
 
 .wrapper {
-    width: 1200px;
-    padding: 30px;
+    max-width: 1200px;
+    padding: 0 30px;
     margin: 0 auto;
 }

@@ -1,0 +1,25 @@
+.question{
+    background-color: #fff;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+}
+
+.question:nth-child(2n){
+    background-color: #440F51;
+}
+
+.question:after{
+    content:"";
+    width:30px;
+    height:30px;
+    display: inline-block;
+    background-image: url("/img/open-purple.svg");
+    background-size: contain;
+    float:right;
+}
+.question:nth-child(even):after{
+    background-image: url("/img/open.svg");
+}
