@@ -1,6 +1,7 @@
 .list{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .question{   
@@ -8,11 +9,10 @@
     font-size: 24px;
     padding: 30px 70px;   
     line-height: 46px;
-    list-style-type: none;
-    margin: 0;
+    /* margin: 0; */
 }
 
-.question:not(:last-child){
+.list>:not(:last-child){
     margin-bottom: 20px;
 }
 
@@ -24,21 +24,20 @@
 .question:nth-child(odd){
     background-color: #fff;
     color: #1C1A1A;
-
 }
 
 .question:after{
     content:"";
     width: 46px;
     height:46px;
-    display: inline-block;   
+    /* display: inline-block;    */
     background-size: contain;
     float:right;
 }
 .question:nth-child(even):after{
-    background-image: url("../img/open.svg");
+    background-image: url("../from-figma/plus-white.svg");
 }
 
 .question:nth-child(odd):after{
-    background-image: url("../img/open-purple.svg");
+    background-image: url("../from-figma/plus-purple.svg");
 }
