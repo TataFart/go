@@ -34,10 +34,10 @@
     background-size: contain;
     float:right;
 }
-.question:nth-child(even):after{
-    background-image: url("../from-figma/plus-white.svg");
+.question:nth-child(even):after{   
+    background-image: url("../img-from-figma/plus-white.svg");
 }
 
 .question:nth-child(odd):after{
-    background-image: url("../from-figma/plus-purple.svg");
+    background-image: url("../img-from-figma/plus-purple.svg");
 }
