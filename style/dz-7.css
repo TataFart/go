@@ -11,32 +11,39 @@
     text-transform: uppercase;
 }
 
-.header{
+.banner{
     margin-bottom: 100px;
-    max-width: 1440px;
-    background-image: url("../img-from-figma/desctop1.png");
-    background-size:inherit;
-    background-position: bottom right;
-    background-repeat: no-repeat ;
-    padding-bottom: 623px;
+    max-width: 1440px;    
     padding-top: 30px;
+    height: 853px;
+    position: relative;    
+  }
 
-
+.banner:after{     
+    content: "";
+    content: url("../img-from-figma/desctop1.png");  
+        position: absolute;
+    left: 505px;
+    top: 91px;
 }
 
-.header .title{
+.banner .title{
 text-align: left;
 font-size: 150px;
 font-weight: 900;
 line-height: 100%; /* 150px */
 letter-spacing: -15px;
 margin-bottom: 0;
+white-space: pre;
+width: 883px;
+ 
 }
 
-.header .text{
+.banner .text{
     font-size: 28px;
     line-height: 178%;
     padding-left: 100px;
+    
 }
 
 .footer .title {
@@ -219,7 +226,7 @@ margin-bottom: 40px;
     padding-right: 26px;
 }
 
-.vk{
+/* .vk{
     background-image: url(../img-from-figma/vk.svg);
 }
 
@@ -233,4 +240,4 @@ margin-bottom: 40px;
 
 .stumb{
     background-image: url(../img-from-figma/stumbleupon.svg);
-}
+} */
