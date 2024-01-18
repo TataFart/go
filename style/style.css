@@ -22,14 +22,13 @@ body {
     margin-bottom: 100px;
 }
 
-.upper{
-    text-transform: uppercase;
-}
+
 
 .wrapper {
     max-width: 1240px;
     padding: 0 30px;
     margin: 0 auto;
+   
 }
 
 .foto_cap{
