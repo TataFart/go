@@ -14,6 +14,7 @@
 .hero{
     margin-bottom: 100px;     
     position: relative; 
+    min-height: 823px;
     
   }
 
@@ -39,7 +40,6 @@ font-weight: 900;
 line-height: 150px;
 letter-spacing: -15px;
 margin-bottom: 0;
-white-space: pre;
 width: 883px;
 
  
@@ -86,11 +86,14 @@ margin-bottom: 40px;
 .hall-links{
     text-decoration: none;
     color: inherit;
-    word-spacing: 100vw;
+    max-width: 250px;    
     line-height:  114.286%;
     font-size: 70px;
     text-transform: uppercase;
-    font-weight: 700;    
+    font-weight: 700;   
+    display: inline-block; 
+    text-align: center;
+    vertical-align: center;
    }
 
 .hall{
@@ -145,32 +148,28 @@ margin-bottom: 40px;
     line-height: 113.636%;
     position: relative;
     padding-left: 55px;
-    /* white-space: pre; */
-    margin-bottom: 40px;
+    white-space: pre-line;
+    margin-bottom: 40px;  
     text-align: left;  
 }
-.break:after{
-    content: "\A";
-    white-space: pre;
-}
+
 .upper::before{
     content:	"\201C";
     color: #6C0287;    
     font-weight: 900;
-    line-height: 50px;
-    text-transform: uppercase;    
+    line-height: 50px;      
     position: absolute;
     top:-8px;
-    left: 0px;
+    left: 0;
 }
 
 .upper::after{
     content: "\201D";
-    color: #6C0287;
-    font-size: 44px;
+    color: #6C0287;    
     font-weight: 900;
     line-height: 50px;
-    text-transform: uppercase;
+    padding-left: 10px;
+    
 }
 
 .auth-text{
@@ -212,12 +211,10 @@ margin-bottom: 40px;
     padding-left: 60px;
 }
 
-
-
 .wrap-link.location{
     margin-bottom: 38px;
-    background-image: url(../img-from-figma/location.svg);
-    /* white-space: pre; */
+    background-image: url(../img-from-figma/location.svg);   
+    white-space: pre-line;
     background-size: 33px;
 }
 
@@ -238,19 +235,16 @@ margin-bottom: 40px;
 }
 
 .item{
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 26px;
     width: 50px;
     height: 50px;
-    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.list{
-    display: inline;
-    margin-right: 26px;
-}
-
-.list:last-child{
+.item:last-child{
     margin-right: 0;
 }
 
