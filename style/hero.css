@@ -1,0 +1,41 @@
+.hero{
+   padding-top: 146px;  
+   padding-bottom: 50px;
+    position: relative; 
+    min-height: 1019px;
+
+    
+  }
+
+.hero::after{     
+    content: ''; 
+    background-image: url(../img-from-figma/desctop1.png);
+    background-size: contain;
+    display: block;  
+    height: 762px;           
+    width: 675px;    
+    background-repeat: no-repeat;
+    background-size: contain;
+    right:0px;
+    bottom: 50px;
+    position: absolute; 
+    
+}
+
+.hero-title{
+text-align: left;
+font-size: 150px;
+font-weight: 900;
+line-height: 150px;
+letter-spacing: -15px;
+margin-bottom: 0;
+width: 883px;
+
+ 
+}
+.hero-text{
+    font-size: 28px;
+    line-height: 178%;
+    padding-left: 100px;
+    
+}

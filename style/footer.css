@@ -1,0 +1,64 @@
+.footer {
+    max-width: 1240px;
+    padding: 79px 30px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    margin-bottom: 54px;
+}
+
+
+.wrap-link {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 60px;
+}
+
+.location {
+    margin-bottom: 38px;
+    background-image: url(../img-from-figma/location.svg);   
+    white-space: pre-line;
+    background-size: 33px;
+}
+
+.phone {
+    margin-bottom: 11px;
+    background-image: url(../img-from-figma/phone-call.svg);
+}
+
+.mail {
+    margin-bottom: 39px;
+    background-image: url(../img-from-figma/envelope.svg);
+}
+
+.social-list {
+       font-size: 0;
+}
+
+.social-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 26px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: block;
+   
+}
+
+.social-icon {
+    display: block;
+}

@@ -1,3 +1,7 @@
-@import url("style.css");
+@import url("global-style.css");
 @import url("faq.css");
-@import url("dz-7.css");
+@import url("footer.css");
+@import url("hero.css");
+@import url("halls.css");
+@import url("about.css");
+@import url("normolize.css");

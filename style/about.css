@@ -1,0 +1,78 @@
+.quotes {
+    color: #6C0287;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding-right: 16px;
+}
+
+.blockquote {    
+    font-size: 44px;
+    line-height: 113.636%;  
+    text-align: right;   
+}
+
+.upper {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 113.636%;
+    position: relative;
+    padding-left: 55px;
+    white-space: pre-line;
+    margin-bottom: 40px;  
+    text-align: left;  
+}
+
+.upper::before {
+    content:	"\201C";
+    color: #6C0287;    
+    font-weight: 900;
+    line-height: 50px;      
+    position: absolute;
+    top:-8px;
+    left: 0;
+}
+
+.upper::after {
+    content: "\201D";
+    color: #6C0287;    
+    font-weight: 900;
+    line-height: 50px;
+     
+}
+
+.auth-text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 260px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.auth-foto {
+    object-fit:cover;
+    height: 80px;
+    width: 80px;
+    margin-right: 35px;
+    border-radius: 50px;
+    object-position: bottom -35px right 0px;  
+    display: inline-block;   
+    vertical-align: middle;
+}
+
+.about-text:last-child {
+    margin-bottom: 0 ;
+}
+
+.about-text {
+    margin-bottom: 28px;
+}
+
+.about-text-wrap {
+    margin-bottom: 78px;
+}
