@@ -1,11 +1,11 @@
 .hero{
    padding-top: 146px;  
    padding-bottom: 50px;
-   min-height: 1059px;
-     }
+       }
 
-.container-hero{
-  min-height: 762px;
+.hero-container{
+  position: relative;
+  min-height: 1059px;
 }
 
 .hero-text::after{     
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     right: 30px;
-    top: -50px;
+    bottom: 0px;
     position: absolute; 
     
 }
@@ -38,5 +38,4 @@ width: 883px;
     font-size: 28px;
     line-height: 178%;
     padding-left: 100px;
-    position: relative;
 }
