@@ -1,14 +1,14 @@
 .hero{
    padding-top: 146px;  
    padding-bottom: 50px;
-       }
-
-.hero-container{
-  position: relative;
-  min-height: 1059px;
 }
 
-.hero-text::after{     
+.contant-container{
+    min-height: 823px;  
+    position: relative; 
+}
+
+.contant-container::after{     
     content: ''; 
     background-image: url(../img-from-figma/desctop1.png);
     background-size: contain;
@@ -17,7 +17,7 @@
     width: 675px;    
     background-repeat: no-repeat;
     background-size: contain;
-    right: 30px;
+    right: 0px; 
     top: 61px;
     position: absolute; 
     
@@ -30,7 +30,7 @@ font-weight: 900;
 line-height: 150px;
 letter-spacing: -15px;
 margin-bottom: 0;
-width: 883px;
+
 
  
 }
