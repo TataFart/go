@@ -10,7 +10,7 @@
 
 .contant-container::after{     
     content: ''; 
-    background-image: url(../img-from-figma/desctop1.png);
+    background-image: url(/hero/desctop1.png);
     background-size: contain;
     display: block;  
     height: 762px;           
@@ -23,7 +23,7 @@
     
 }
 
-.hero-title{
+.hero__title{
 text-align: left;
 font-size: 150px;
 font-weight: 900;
@@ -34,7 +34,7 @@ margin-bottom: 0;
 
  
 }
-.hero-text{
+.hero__text{
     font-size: 28px;
     line-height: 178%;
     padding-left: 100px;

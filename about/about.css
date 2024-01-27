@@ -1,19 +1,11 @@
-.quotes {
-    color: #6C0287;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 50px;
-    text-transform: uppercase;
-    padding-right: 16px;
-}
 
-.blockquote {    
+.about__blockquote {    
     font-size: 44px;
     line-height: 113.636%;  
     text-align: right;   
 }
 
-.upper {
+.about__blockquote-uppercase {
     text-transform: uppercase;
     font-size: 44px;
     font-weight: 400;
@@ -25,7 +17,7 @@
     text-align: left;  
 }
 
-.upper::before {
+.about__blockquote-uppercase::before {
     content:	"\201C";
     color: #6C0287;    
     font-weight: 900;
@@ -35,7 +27,7 @@
     left: 0;
 }
 
-.upper::after {
+.about__blockquote-uppercase::after {
     content: "\201D";
     color: #6C0287;    
     font-weight: 900;
@@ -43,7 +35,7 @@
      
 }
 
-.auth-text {
+.about__author-text {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -54,7 +46,7 @@
     text-align: left;
 }
 
-.auth-foto {
+.about__author-foto {
     object-fit:cover;
     height: 80px;
     width: 80px;
@@ -65,14 +57,26 @@
     vertical-align: middle;
 }
 
-.about-text:last-child {
+.about__text:last-child {
     margin-bottom: 0 ;
 }
 
-.about-text {
+.about__text {
     margin-bottom: 28px;
 }
 
-.about-text-wrap {
+.about__text-wrap {
     margin-bottom: 78px;
+}
+
+.about__title {
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: uppercase;
 }

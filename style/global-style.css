@@ -108,14 +108,6 @@ ul {
     text-transform: uppercase;
 }
 
-.section:first-child .title {
-    margin-bottom: 60px;
-    }
-
-.section:last-child .title {
-margin-bottom: 40px;
-}
-
 
 .list {
     list-style: none;
