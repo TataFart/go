@@ -18,7 +18,7 @@
 }
 
 
-.address__wrap-link {
+.address__link {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -29,19 +29,19 @@
     padding-left: 60px;
 }
 
-.address__location {
+.address__link_icon_location {
     margin-bottom: 38px;
     background-image: url(./icons/location.svg);   
     white-space: pre-line;
     background-size: 33px;
 }
 
-.address__phone {
+.address__link_icon_phone {
     margin-bottom: 11px;
     background-image: url(./icons/phone-call.svg);
 }
 
-.address__mail {
+.address__link_icon_mail {
     margin-bottom: 39px;
     background-image: url(./icons/envelope.svg);
 }

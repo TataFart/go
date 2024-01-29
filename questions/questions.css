@@ -4,7 +4,7 @@
     list-style: none;
 }
 
-.questions__question{   
+.questions__item{   
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;   
@@ -16,28 +16,28 @@
     margin-bottom: 20px;
 }
 
-.questions__question:nth-child(even){
+.questions__item:nth-child(even){
     background-color: #440F51;
     color: #fff;
 }
 
-.questions__question:nth-child(odd){
+.questions__item:nth-child(odd){
     background-color: #fff;
     color: #1C1A1A;
 }
 
-.questions__question:after{
+.questions__item:after{
     content:"";
     width: 46px;
     height:46px;   
     background-size: contain;
     float:right;
 }
-.questions__question:nth-child(even):after{   
+.questions__item:nth-child(even):after{   
     background-image: url("./plus-white.svg");
 }
 
-.questions__question:nth-child(odd):after{
+.questions__item:nth-child(odd):after{
     background-image: url("./plus-purple.svg");
 }
 

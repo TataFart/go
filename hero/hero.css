@@ -1,14 +1,14 @@
-.hero{
+.hero {
    padding-top: 146px;  
    padding-bottom: 50px;
 }
 
-.contant-container{
+.hero__contant {
     min-height: 823px;  
     position: relative; 
 }
 
-.contant-container::after{     
+.hero__contant::after {     
     content: ''; 
     background-image: url(/hero/desctop1.png);
     background-size: contain;
@@ -23,18 +23,17 @@
     
 }
 
-.hero__title{
+.hero__title {
 text-align: left;
 font-size: 150px;
 font-weight: 900;
 line-height: 150px;
 letter-spacing: -15px;
 margin-bottom: 0;
-
-
  
 }
-.hero__text{
+
+.hero__text {
     font-size: 28px;
     line-height: 178%;
     padding-left: 100px;
