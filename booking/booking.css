@@ -9,3 +9,9 @@
     line-height: 125%;
     text-transform: uppercase;
 }
+
+.booking__btn {
+    background-color:  #ffffff;
+    color: #1B1A1B;
+    padding: 5px;
+}
