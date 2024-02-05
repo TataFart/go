@@ -2,7 +2,7 @@
 .about__blockquote {    
     font-size: 44px;
     line-height: 113.636%;  
-    text-align: right;   
+       
 }
 
 .about__blockquote-text {
@@ -11,10 +11,10 @@
     font-weight: 400;
     line-height: 113.636%;
     position: relative;
-    padding-left: 55px;
+    padding-left: 31px;
     white-space: pre-line;
     margin-bottom: 40px;  
-    text-align: left;  
+         
 }
 
 .about__blockquote-text::before {
@@ -45,6 +45,16 @@
     vertical-align: middle;
     text-align: left;
 }
+.about__img {
+    display: inline-block;
+    margin-right: 70px;
+    
+}
+.wrap {
+    display: inline-block;
+    max-width: 500px;
+    vertical-align:top;
+}
 
 .about__author-foto {
     object-fit:cover;
@@ -62,11 +72,12 @@
 }
 
 .about__text {
-    margin-bottom: 28px;
+    white-space: pre-line;
+    margin-bottom: 28px;     
 }
 
 .about__text-wrap {
-    margin-bottom: 78px;
+    margin-bottom: 48px;
 }
 
 .about__title {
@@ -79,4 +90,21 @@
     font-weight: 700;
     line-height: 125%;
     text-transform: uppercase;
+}
+
+.about__img {
+    display: inline-block;
+    vertical-align: top;
+     margin-right: 74px; /*не могу понять, почему если ставлю 80px как в макете, то переносится на бругую строку, картинка, хотя картинка 600, блок 500, max-width: 1240px;(-60px padding) */
+
+    
+}
+.about__contant {
+    display: inline-block;
+    max-width: 500px;
+    vertical-align:top;
+}
+
+.author {
+    text-align: right;
 }
