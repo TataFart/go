@@ -94,8 +94,8 @@
 
 .about__img {
     display: inline-block;
-    vertical-align: top;
-     margin-right: 74px; /*не могу понять, почему если ставлю 80px как в макете, то переносится на бругую строку, картинка, хотя картинка 600, блок 500, max-width: 1240px;(-60px padding) */
+    vertical-align: top;    
+    margin-right: 74px; /*не могу понять, почему если ставлю 80px как в макете, то переносится на бругую строку, картинка, хотя картинка 600, блок 500, max-width: 1240px;(-60px padding) */
 
     
 }
