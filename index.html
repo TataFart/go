@@ -25,7 +25,7 @@
              <section class="hero">                       
                                 <div class="container">
                                     <div class="hero__contant">
-                                        <p class="hero__title">Game over</p>
+                                        <h1 class="hero__title">Game over</h1>
                                         <p class="hero__text">Новый формат игр и отдыха</p>
                                     </div>
                                 </div>                       
@@ -50,7 +50,7 @@
                         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post" name="orderForm">
 
                             <fieldset class="booking__fieldset">
-                                <legend class="fieldset__legend" hidden>Выбери зал</legend>
+                                <legend class="booking__legend" hidden>Выбери зал</legend>
 
                                 <input class="booking__radio-input" type="radio" name="hall" value="vibes" id="vibes">
                                 <label class="booking__radio-label" for="vibes">80`s vibes</label>
@@ -65,7 +65,7 @@
                             </fieldset>
 
                             <fieldset class="booking__fieldset">
-                                <legend class="fieldset-legend">Собери набор развлечений</legend>
+                                <legend class="booking__legend">Собери набор развлечений</legend>
 
                                 <fieldset class="booking__fieldset">
                                     <legend class="fieldset-legend">Приставка:</legend>
@@ -86,7 +86,7 @@
 
                                 <fieldset class="booking__fieldset">
 
-                                    <legend class="fieldset__legend">Настольные игры:</legend>
+                                    <legend class="booking__legend">Настольные игры:</legend>
 
                                     <label class="booking__ch-box-label"><input class="booking__ch-box-input" type="checkbox" name="tablegames" value="jenga" id="jenga">
                                     Jenga</label>
@@ -104,7 +104,7 @@
 
                                 <fieldset class="booking__fieldset">
 
-                                    <legend class="fieldset__legend">Дополнительно:</legend>
+                                    <legend class="booking__legend">Дополнительно:</legend>
 
                                     <label class="booking__ch-box-label">
                                         <input class="booking__ch-box-input" type="checkbox" name="add" value="karaoke" id="karaoke">
@@ -120,19 +120,19 @@
                             
                              <fieldset class="booking__fieldset">
 
-                                    <legend class="fieldset__legend" hidden>Дата, время, количество чловек</legend>
+                                    <legend class="booking__legend" hidden>Дата, время, количество чловек</legend>
 
                                     <div class="booking__group">
                                         <div class="booking__date">
                                             <label class="booking__date-label" for="date">Дата*</label>
-                                            <input class="booking__date-input" type="date" value="date" id="date" required>
+                                            <input class="booking__date-input" type="date" id="date" required>
                                             
                                             <label class="booking__date-label" for="time">Время*</label>
-                                            <input class="booking__date-input" type="time" value="time" id="time" required>
+                                            <input class="booking__date-input" type="time"  id="time" required>
                                         </div>
                                         
                                         <label class="booking__info-label" for="amount">Количество человек*</label>
-                                        <input class="booking__info-input" type="number" value="amount" id="amount" required>
+                                        <input class="booking__info-input" type="number" id="amount" required>
                                     </div>
                                     
                                     <div class="booking__group">
@@ -153,16 +153,16 @@
                                     
                                     
 
-                                    <label class="booking__ch-box-label">Я старше 18 лет
-                                        <input class="booking__ch-box-input" type="checkbox" name="agreement1" id="agreement" required> 
+                                    <label class="booking__ch-box-label" for="agreement-age">Я старше 18 лет
+                                        <input class="booking__ch-box-input" type="checkbox" name="agreement-age" id="agreement-age" required> 
                                     </label>
                                    
                             </fieldset>
 
                             <button class="booking__btn" type="submit" formtarget="blank">Забронировать</button>
 
-                            <label for="booking__ch-box-label">Согласен на обработку данных
-                                <input class="booking__ch-box-input" type="checkbox" name="agreement2" id="agreement2" required>
+                            <label class="booking__ch-box-label" for="agreement-data">Согласен на обработку данных
+                                <input class="booking__ch-box-input" type="checkbox" name="agreement-data" id="agreement-data" required>
                             </label>
 
                         </form>
@@ -193,7 +193,7 @@
                                <p class="about__blockquote-text">GAME OVER &#8212;
                                   это место незабываемых впечатлений </p>
                                 <div class="author">
-                                    <img class="about__author-foto" src="./about/foto-founder-abakshin.jpg">
+                                    <img class="about__author-foto" src="./about/foto-founder-abakshin.jpg" alt="фото Аркадия Абракшина">
                                     <p class="about__author-text">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
                                </div>
                             </blockquote>

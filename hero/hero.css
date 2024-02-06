@@ -19,21 +19,19 @@
     background-size: contain;
     right: 0px; 
     top: 61px;
-    position: absolute; 
-    
+    position: absolute;     
 }
 
 .hero__title {
-text-align: left;
-font-size: 150px;
-font-weight: 900;
-line-height: 150px;
-letter-spacing: -15px;
-margin-bottom: 0;
-font-family: Arial;
-font-style: normal;
-text-transform: uppercase;
- 
+    text-align: left;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    letter-spacing: -15px;
+    margin-bottom: 0;
+    font-family: Arial;
+    font-style: normal;
+    text-transform: uppercase; 
 }
 
 .hero__text {
