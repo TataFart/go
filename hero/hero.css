@@ -10,7 +10,7 @@
 
 .hero__contant::after {     
     content: ''; 
-    background-image: url(/hero/desctop1.png);
+    background-image: url(../hero/desctop1.png);
     background-size: contain;
     display: block;  
     height: 762px;           

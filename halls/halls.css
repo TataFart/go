@@ -46,20 +46,20 @@
 }
 
 .halls__list-item_theme_vibes80 {
-      background-image: url(/halls/img/80-vibes.jpg);
+      background-image: url(../halls/img/80-vibes.jpg);
     margin-bottom: 60px;
 }
 
 .halls__list-item_theme_starwars {
-    background-image: url(/halls/img/star-war.jpg);
+    background-image: url(../halls/img/star-war.jpg);
     margin-bottom: 60px;
 }
 
 .halls__list-item_theme_wildwest {
-     background-image: url(/halls/img/wild-west.jpg);
+     background-image: url(../halls/img/wild-west.jpg);
     margin-bottom: 60px;
 }
 
 .halls__list-item_theme_neon {
-    background-image: url(/halls/img/neon.jpg);
+    background-image: url(../halls/img/neon.jpg);
 }   
