@@ -1,5 +1,4 @@
-.footer {
-    
+.footer {    
     padding: 79px 30px;
     padding-bottom: 50px;   
 }
@@ -8,9 +7,7 @@
     margin-bottom: 54px;
     text-align: center;
     justify-content: center;
-    font-family: Arial;
-    font-size: 40px;
-    font-style: normal;
+    font-size: 40px;    
     font-weight: 700;
     line-height: 125%;
     text-transform: uppercase;

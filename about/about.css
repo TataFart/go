@@ -74,10 +74,8 @@
 .about__title {
     margin-bottom: 50px;
     text-align: center;
-    justify-content: center;
-    font-family: Arial;
+    justify-content: center;    
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 125%;
     text-transform: uppercase;

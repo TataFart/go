@@ -1,21 +1,13 @@
 
-/* .halls {
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
-} */
-
 .halls__list {
-    list-style: none;
+    list-style: none;    
 }
 
 .halls__title {
     margin-bottom: 60px;
     text-align: center;
     justify-content: center;
-    font-family: Arial;
-    font-size: 40px;
-    font-style: normal;
+    font-size: 40px;    
     font-weight: 700;
     line-height: 125%;
     text-transform: uppercase;
@@ -24,7 +16,6 @@
 .halls__link {
     text-decoration: none;
     color: inherit;
-    max-width: 250px;    
     line-height:  114.286%;
     font-size: 70px;
     text-transform: uppercase;
@@ -35,29 +26,33 @@
 }
 
 .halls__list-item{
+    display: inline-block;
+    vertical-align: top;    
     color: #FFF;
-    max-width: 1180px;
-    min-height: 710px;;
-    text-align: center;
-    line-height: 710px;
+    width: 580px;    
+    padding:135px 0 134px;
+    text-align: center;    
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;  
+}
+
+.halls__list-item:not(:nth-child(2n)){
+    margin-right: 14px;
 }
 
 .halls__list-item_theme_vibes80 {
-      background-image: url(../halls/img/80-vibes.jpg);
-    margin-bottom: 60px;
+    background-image: url(../halls/img/80-vibes.jpg);
+    margin-bottom: 20px;
 }
 
 .halls__list-item_theme_starwars {
     background-image: url(../halls/img/star-war.jpg);
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .halls__list-item_theme_wildwest {
     background-image: url(../halls/img/wild-west.jpg);
-    margin-bottom: 60px;
 }
 
 .halls__list-item_theme_neon {

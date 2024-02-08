@@ -44,10 +44,8 @@
 .questions__title {
     margin-bottom: 40px;
     text-align: center;
-    justify-content: center;
-    font-family: Arial;
-    font-size: 40px;
-    font-style: normal;
+    justify-content: center;    
+    font-size: 40px;    
     font-weight: 700;
     line-height: 125%;
     text-transform: uppercase;
