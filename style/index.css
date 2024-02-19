@@ -1,4 +1,5 @@
 @import url("global-style.css");
+@import url("../header/header.css");
 @import url("../questions/questions.css");
 @import url("../footer/footer.css");
 @import url("../hero/hero.css");

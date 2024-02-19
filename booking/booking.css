@@ -1,3 +1,8 @@
+.booking {
+    padding: 80px 0;
+    background-color:  #440f51;;
+}
+
 .booking__title {
     margin-bottom: 50px;
     text-align: center;
@@ -13,3 +18,240 @@
     color: #1B1A1B;
     padding: 5px;
 }
+
+.booking__fieldset {
+border: none;
+padding: 0;
+}
+
+.booking__fieldset_data {
+   
+    max-width: 980px;
+    margin: 0 auto 40px;
+
+}
+
+.booking__fieldset_entertainment {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.booking__fieldset_column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking__legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+   
+    margin-bottom: 40px;
+}
+.booking__legend_align_center {
+     text-align: center;
+}
+
+.booking__radio-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    position: absolute;
+}
+
+.booking__radio-input {
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;  
+    position: relative;
+    top: 4px;
+}
+
+.booking__radio-input:checked {
+    border: 3px solid #fff;
+    background-color:#440f51;
+}
+
+.booking__radio-label_hall:hover {
+    /* border-color: #cd06ff; */
+    box-shadow: 0px 0px 12px rgba(241, 17, 248, 0.7);
+}
+
+.booking__radio-input-hall:checked + .booking__radio-label_hall {
+    color: #cd06ff;
+    transition: 0.2s all linear;
+}
+
+
+.booking__radio-label_hall {
+    padding: 7px 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    border: 3px solid transparent;
+}
+
+    
+.booking__fieldset_halls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.booking__ch-box-label {
+    position: relative;
+    display: block;    
+    line-height: 25px;
+    padding-left: 37px;
+    font-weight: 400;
+    font-size: 22px; 
+}
+
+.booking__ch-box-input {
+    position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: -37px;
+}
+
+.booking__ch-box-input:before {
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  
+}
+
+.booking__ch-box-input:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 20px;
+    height: 10px;
+    border: 3px solid #440f51;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    transform: rotate(-45deg);
+    transition: 0.2s all linear;
+}
+.booking__ch-box-input:checked:after {
+    opacity: 1
+  }
+
+.booking__group {
+    display: flex;
+    flex-direction: column;   
+    gap: 36px;
+    max-width: 300px;
+    align-self: end;   
+}
+
+.booking__date {
+    max-width: 300px;
+}
+
+.booking__group_contacts{
+    gap: 14px;
+}
+
+.booking__fieldset-info {
+    display: flex;
+    gap:50px;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.booking__date {
+    display: flex;
+    gap: 32px;
+}
+
+.booking__date-input {
+    padding: 10px 20px;
+    max-width: 134px ;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.booking__date-input:focus-visible {
+    border-color: #cd06ff;
+}
+
+.booking__info-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+}
+
+.booking__info-input {
+    color: #000;
+    padding: 12px 20px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.booking__info-input:focus-visible {
+    border-color: #cd06ff;
+}
+
+.booking__btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.booking__btn {
+    border-radius: 10px;    
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #6c0287;
+    padding: 16px 50px;
+    text-align: right;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.booking__btn:hover {
+    color: #cd06ff;     
+}
+
+.booking__btn:focus-visible {
+    border-color:  #cd06ff ;
+}
+
+.booking__group-item {
+    display: flex;
+    flex-direction: column ;
+    gap: 6px;    
+}
+
+.booking__radio-input-hall {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    position: absolute;
+}
+
