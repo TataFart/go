@@ -3,14 +3,6 @@
    padding-bottom: 50px;
 }
 
-.hero__content { 
-    min-height: 623px;  
-    width: 56%;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-}
-
 .hero__content-container {
     min-height: 823px;  
     position: relative; 
@@ -46,6 +38,7 @@
     font-size: 28px;
     line-height: 178%;
     padding-left: 100px;
+    margin-bottom: 65px;
 }
 
 .hero__buttons {
@@ -56,23 +49,30 @@
 .hero__info {
     display: flex;
     gap:40px;  
+    margin-bottom: 150px;
+    align-items: flex-end;
 }
 
 .hero__info-item {
     display: flex;
-    flex-direction: column;
-   align-self:flex-end;
+    flex-direction: column;  
     flex-wrap: wrap;    
     text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 115%; 
+    max-width: 200px;
 }
 
 .hero__down {
     z-index: 10;
-    cursor: pointer;   
+    cursor: pointer; 
+    position: absolute;  
+    bottom: 90px;
+    left: 46%;
 }
 
-.hero__down:hover {
-  
+.hero__down:hover {  
     color:#cd06ff;
 }
 
@@ -82,7 +82,7 @@
     line-height: 115%;    
 }
 
-.hero__info-text_special-text {
+.hero__strong-text {
     font-weight: 900;
     font-size: 75px;
     font-variant: all-small-caps;
@@ -90,18 +90,21 @@
     line-height: 115%;
 }
 
-.hero__info-text_special-number {
+.hero__strong-number {
     font-weight: 900;
     font-size: 100px;
     color: #cd06ff;
     line-height: 115%;
 }
 
-.hero__button {   
+.hero__link {   
+    display: inline-block;
+    vertical-align: center;
     border-radius: 10px;
     padding: 25px 69px;
     text-transform: uppercase;
     background-color: #6c0287;
+    box-shadow: 0 0 10px #6c0287;
     font-weight: 700;
     font-size: 26px;
     line-height: 115%;
@@ -110,16 +113,13 @@
     outline: none;   
 }
 
-.hero__button:hover {
+.hero__link:hover {
     background-color:  #440f51;
 }
-.hero__button:focus-visible {
+.hero__link:focus-visible {
     border-color: #000;
 }
 
-.hero__button-wrap {
-    margin-top: -33px;
-}
 
 .wehave {
     padding-top: 50px;
@@ -152,7 +152,8 @@
     min-width: 380px;
     min-height: 228px;
     display: flex;
-    padding: 0 40px ;   
+    padding: 6px 40px; 
+    align-items: flex-end;  
 }
 
 .wehave__text {
@@ -161,7 +162,6 @@
     font-size: 20px;
     line-height: 140%;
     color: #fff;
-    align-self: flex-end;  
     min-height: 56px;
 }
 

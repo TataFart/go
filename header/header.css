@@ -23,7 +23,7 @@
 
 .navigation__link {
     text-transform: uppercase;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-weight: 400;
     font-size: 22px;
     line-height: 2,27;
@@ -35,7 +35,7 @@
 }
 
 .navigation__link:focus {
-    border: 3px solid #6c0287;
+    border: 2px solid #6c0287;
     outline: none;
 }
 
@@ -55,6 +55,6 @@
 
 .header__button:focus {
     outline: none;
-    border: 5px solid #6c0287;
+    border: 3px solid #6c0287;
 }
 

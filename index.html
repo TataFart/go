@@ -30,7 +30,7 @@
                 <ul class="navigation__list">
                     <li class="navigation__item"><a class="navigation__link" href="#halls">Залы</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Бронь</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#booking">Бронь</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#reviews">Отзывы</a></li>
                     <li class="navigation__item"><a class="navigation__link"  href="#contacts">Контакты</a></li>
                 </ul>
@@ -56,33 +56,34 @@
     
                                 <div class="hero__info">
 
-                                 <p class="hero__info-item">
-                                     <span class="hero__info-text hero__info-text_special-number">4</span>
-                                    <span class="hero__info-text">Тематических</span> 
-                                     <span class="hero__info-text">зала</span>
-                                </p>
+                                    <p class="hero__info-item">
+                                        <span class="hero__strong-number">4</span>
+                                        Тематических зала
+                                    </p>
 
-                                <p class="hero__info-item">
-                                     <span class="hero__info-text hero__info-text_special-text">new</span>
-                                    <span class="hero__info-text">Новейшая</span>
-                                    <span class="hero__info-text">аппаратура</span></p>
+                                    <p class="hero__info-item">
+                                        <span class="hero__strong-text">new</span>
+                                        Новейшая аппаратура</p>
+                                        
                                 </div>
     
-                                <div class="hero__buttons">
+                                
+                                <a href="#booking" class="hero__link" >Забронировать</a>
+                                                             
 
-                                <div class="hero__button-wrap"><button class="hero__button" type="button">Забронировать</button></div>
-    
-                                <svg class="hero__down" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="48.5" cy="48.5" r="48" stroke="currentColor" />
-                                                    <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="currentColor" />
-                                                    <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor" />
-                                 </svg>
-                                </div>
+                                <a href="#wehave" class="hero__down">
+                                    <svg class="" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="48.5" cy="48.5" r="48" stroke="currentColor" />
+                                                        <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="currentColor" />
+                                                        <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor" />
+                                     </svg>
+                                </a>
+
                          </div>  
                                                            
                     </div>
 
-                    <div class="wehave">
+                    <div class="wehave" id="wehave">
                         <h2 class="wehave__title">У нас есть всё для классного отдыха с друзьями</h2>
 
                         <ul class="wehave__list">
@@ -126,8 +127,8 @@
                         </div>
               </section>
     
-               <section class="section">
-                    <div class="booking">
+               <section class="section" >
+                    <div class="booking" id="booking">
                         <div class="container">
                             <h2 class="booking__title">Забронировать зал просто</h2>
                             <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post" name="orderForm">
@@ -194,19 +195,20 @@
                                  <fieldset class="booking__fieldset booking__fieldset_data">
                                         <legend class="booking__legend booking__legend_align_center">Выбери дату и время</legend>
                                         <div class="booking__fieldset-info">
-                                            <div class="booking__group">
+                                            <div class="booking__group booking__group_date">
                                                 <div class="booking__date">
+                                                    
+                                                    <label for="" class="booking__date-label">
+                                                        <input placeholder="Дата" class="booking__date-input" type="date" id="date" required></label>
                         
-                                                    <input placeholder="Дата" class="booking__date-input" type="date" id="date" required>
                         
-                        
-                                                    <input placeholder="Время" class="booking__date-input" type="time"  id="time" required>
+                                                    <label for="" class="booking__date-label"><label for="|" class="|"><input placeholder="Время" class="booking__date-input" type="time"  id="time"  required></label></label>
                                                 </div>
                         
                                                 <input placeholder="Количество человек" class="booking__info-input" type="number" id="amount" required>
                                             </div>
                         
-                                            <div class="booking__group booking__group_contacts">
+                                            <div class="booking__group booking__group_name">
                                                 <div class="booking__group-item">
                                                     <label class="booking__info-label" for="name">Имя</label>
                                                     <input class="booking__info-input" type="text"  id="name" name="name" required >
@@ -277,7 +279,7 @@
     
                </section>
 
-               <section class="section reviews">
+               <section class="section reviews" id="reviews">
                 <div class="container">
 
                     <h2 class="reviews__title">Отзывы посетителей</h2>
