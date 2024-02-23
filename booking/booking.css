@@ -54,11 +54,19 @@
      text-align: center;
 }
 
-.booking__radio-input {
-    appearance: none;
+/* .booking__radio-input {
+    appearance: none;               
     -webkit-appearance: none;
     -moz-appearance: none; 
     position: absolute;
+} */
+.booking__radio-input:checked { /* не работает. чтобы был квадратик фокуса пришлось пожертвовать собственным :checked*/
+    border: 3px solid #fff;
+    background-color:#440f51; /* на мой вкус лучше без этого квадратика, но с checked d wdtn*/
+}
+
+.booking__radio-input:focus {    
+    outline: 1px solid #cd06ff;
 }
 
 .booking__radio-input {
@@ -68,25 +76,10 @@
     background-color: #fff;
     border: 2px solid transparent;
     transition: 0.2s all linear;
-    outline: none;
+    outline: 1px solid transparent;
     margin-right: 5px;  
     position: relative;
     top: 4px;
-}
-
-.booking__radio-input:checked {
-    border: 3px solid #fff;
-    background-color:#440f51;
-}
-
-.booking__radio-label_hall:hover {
-    border-color: #cd06ff;
-    box-shadow: 0px 0px 12px rgba(241, 17, 248, 0.7);
-}
-
-.booking__radio-input-hall:checked + .booking__radio-label_hall {
-    color: #cd06ff;
-    transition: 0.2s all linear;
 }
 
 
@@ -100,8 +93,28 @@
     text-transform: uppercase;
     text-align: center;
     color: #000;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     flex-basis: 240px;
+}
+
+.booking__radio-label_hall:hover {    
+    background-color: #eadeed;;
+    outline: 2px solid #6c0287;
+}
+
+.booking__radio-label_hall:focus {
+    background-color: #fff; 
+    color: #000;
+    outline: 2px solid #6c0287;
+}
+
+.booking__radio-input-hall:active+ .booking__radio-label_hall,
+.booking__radio-input-hall:checked+ .booking__radio-label_hall {
+
+  border-color: #fff;
+  color: #fff;
+  background-color:#6c0287;
+ 
 }
     
 .booking__fieldset_halls {
@@ -156,6 +169,11 @@
     transform: rotate(-45deg);
     transition: 0.2s all linear;
 }
+
+.booking__ch-box-input:focus:before{
+    outline: 1px solid #cd06ff;
+}
+
 .booking__ch-box-input:checked:after {
     opacity: 1
   }
@@ -206,22 +224,9 @@
 .booking__date-label {    
     position: relative;
 }
-/* .booking__date-label:after {
-    content: "";
-    background-image: url(../img/down.svg);
-    background-repeat: no-repeat;
-    top: 40%;
-    right: 18px;
-    width: 21px;
-    height: 15px;   
-    position: absolute;
-    border: none;
-    outline: none;
-
-} */
 
 .booking__date-input:focus-visible {
-    border-color: #cd06ff;
+    outline: 2px solid #cd06ff;
 }
 
 .booking__info-label {
@@ -233,20 +238,15 @@
 .booking__info-input {
     color: #000;
     padding: 12px 20px;
-    outline: none;
-    border: 2px solid transparent;
+    outline: none;    
 }
 
-.booking__info-input::-webkit-inner-spin-button{
-    background-color:#cd06ff;;
-}
-
-.booking__info-input:focus-visible {
-    border-color: #cd06ff;
+.booking__info-input:focus {
+    outline: 2px solid #cd06ff;
 }
 
 .booking__btn-wrap {
-        max-width: 980px;
+    max-width: 980px;
     margin: 0 auto;
     text-align: right;
 }
@@ -260,16 +260,21 @@
     text-transform: uppercase;
     color: #6c0287;
     padding: 15px 50px;  
-    outline: none;
-    border: 2px solid transparent;
+    outline: none;    
 }
 
 .booking__btn:hover {
-    color: #cd06ff;     
+    background-color: #eadeed;
+    outline: 3px solid #6c0287;
 }
 
-.booking__btn:focus-visible {
-    border-color:  #cd06ff ;
+.booking__btn:focus {
+    outline: 3px solid #6c0287; /* цвет из макета, мне кажется плохо виден, взяла бы ярче...*/
+}
+
+.booking__btn:active {
+    background-color: #eadeed; 
+    outline: none;
 }
 
 .booking__group-item {
