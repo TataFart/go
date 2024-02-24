@@ -11,6 +11,7 @@
     line-height: 46px;   
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .questions__list>:not(:last-child){
@@ -26,6 +27,17 @@
     background-color: #fff;
     color: #1C1A1A;
 }
+
+.questions__item:nth-child(even):hover .questions__plus {
+
+    color: #440F51;  
+    background-color: #fff;
+  }
+
+  .questions__item:nth-child(odd):hover .questions__plus {
+    color:#fff; 
+    background-color: #440F51;
+  }
 
 .questions__plus {
     display: inline; 
@@ -45,24 +57,13 @@
     color:#440F51;
 }
 
-.questions__plus_color_purple:hover {
-    color: #440F51;  
-    background-color: #fff;
-}
-
-.questions__plus_color_white:hover {
-    color:#fff; 
-    background-color: #440F51;
-}
-
-.questions__plus_color_purple:active {    
+.questions__item:nth-child(even):active .questions__plus {    
     color:#fff;
     border: 2px solid #fff;
     background-color: #440F51;
-
 }
 
-.questions__plus_color_white:active {
+.questions__item:nth-child(odd):active .questions__plus{
     border: 2px solid #440F51;
     color:#440F51;
     background-color: #fff;

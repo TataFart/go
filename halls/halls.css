@@ -103,7 +103,7 @@
     color: #eadeed;
 }
 
-.halls__link:focus {
+.halls__link:focus:after {
     outline: 1px solid #cd06ff;
 }
 
