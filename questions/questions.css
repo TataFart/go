@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    
 }
 
 .questions__list>:not(:last-child){
@@ -45,6 +46,7 @@
     cursor: pointer;  
     width: 46px;
     height:46px; 
+    transition: color .2s ease-in, border-color .2s ease-in, background-color .2s ease-in;
 }
 
 .questions__plus_color_purple{    

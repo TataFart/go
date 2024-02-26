@@ -32,11 +32,6 @@
 }
 
 
-
-/* .halls__list-item:not(:nth-child(2n)){
-    margin-right: 14px;
-} */
-
 .halls__list-item_theme_vibes80 {
     background-image: url(../halls/img/80-vibes.jpg);
     
@@ -69,6 +64,7 @@
     background-repeat: no-repeat;
     margin: 10px;  
     z-index: 5;
+    
 }
 
 .halls__link {
@@ -81,6 +77,9 @@
     text-align: center;
     z-index: -1;  
     outline: none; 
+    transition-duration: .25s;
+    transition-property: color;
+   
 }
 
 .halls__link:after {
@@ -92,6 +91,8 @@
     right: 0;
     background-color: #0000;    
     z-index: -1;
+    transition-duration: .25s;
+    transition-property:background-color;
 } 
 
 .halls__link:hover:after {

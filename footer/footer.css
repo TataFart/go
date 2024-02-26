@@ -26,6 +26,7 @@
     padding-left: 60px;
     outline: 1px solid transparent;    
     display: block;
+    transition: color .2s ease-in, outline .2s ease-in;
 }
 
 .address__item:not(:first-child) {
@@ -84,6 +85,7 @@
 .social__link {
     display: block;
     outline: 1px solid transparent;
+    transition: color .2s ease-in, outline .2s ease-in;
 }
 
 .social__link:hover {
@@ -143,6 +145,7 @@
 }
 .footer__developer-link {
     outline: 1px solid transparent;
+    transition: color .2s ease-in, outline .2s ease-in;
 }
 
 .footer__developer-link:hover {

@@ -72,12 +72,15 @@
     left: 50%;
     transform: translateX(-50%);
     outline: none;
+   
     
 }
 
 .hero__down-icon {
     border-radius: 50%;
     border: 1px solid #fff;
+    transition-duration: 0.2s;
+    transition-property:background-color border-color color;
 }
 
 .hero__down-icon:hover {  
@@ -134,7 +137,9 @@
     font-size: 26px;
     line-height: 115%;
     color: #fff;     
-    outline: none;   
+    outline: none;
+    transition-duration: 0.25s;
+    transition-property:background-color;   
 }
 
 .hero__link:hover,
@@ -178,6 +183,11 @@
     display: flex;
     padding: 6px 40px; 
     align-items: flex-end;  
+    transition: .3s linear;
+}
+
+.wehave__item:hover {
+    transform: scale(110%);
 }
 
 .wehave__text {

@@ -13,12 +13,6 @@
     text-transform: uppercase;
 }
 
-.booking__btn {
-    background-color:  #ffffff;
-    color: #1B1A1B;
-    padding: 5px;
-}
-
 .booking__fieldset {
     border: none;
     padding: 0;
@@ -63,6 +57,7 @@
 .booking__radio-input:checked { /* не работает. чтобы был квадратик фокуса пришлось пожертвовать собственным :checked*/
     border: 3px solid #fff;
     background-color:#440f51; /* на мой вкус лучше без этого квадратика, но с checked d wdtn*/
+
 }
 
 .booking__radio-input:focus {    
@@ -79,7 +74,7 @@
     outline: 1px solid transparent;
     margin-right: 5px;  
     position: relative;
-    top: 4px;
+    top: 4px; 
 }
 
 
@@ -94,7 +89,9 @@
     text-align: center;
     color: #000;
     border: 2px solid transparent;
-    flex-basis: 240px;
+    flex-basis: 240px;    
+    transition: color .25s ease-in, outline .25s ease-in, background-color .25s ease-in;   
+       
 }
 
 .booking__radio-label_hall:hover {    
@@ -140,6 +137,7 @@
   -moz-appearance: none;
   appearance: none;
   margin-left: -37px;
+
 }
 
 .booking__ch-box-input:before {
@@ -152,7 +150,7 @@
   height: 25px;
   background-color: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  
+    
 }
 
 .booking__ch-box-input:after {
@@ -167,7 +165,8 @@
     border-right: none;
     opacity: 0;
     transform: rotate(-45deg);
-    transition: 0.2s all linear;
+    transition-duration: 0.3s;
+    transition-property: opacity;
 }
 
 .booking__ch-box-input:focus:before{
@@ -219,6 +218,8 @@
     border: 2px solid transparent;
     color:#000;
     height: 50.56px;
+    transition-duration: 0.2s;
+    transition-property: outline;
 }
 
 .booking__date-label {    
@@ -238,7 +239,9 @@
 .booking__info-input {
     color: #000;
     padding: 12px 20px;
-    outline: none;    
+    outline: none;   
+    transition-duration: 0.2s;
+    transition-property: outline; 
 }
 
 .booking__info-input:focus {
@@ -252,6 +255,9 @@
 }
 
 .booking__btn {
+    background-color:  #ffffff;
+    color: #1B1A1B;
+    padding: 5px;
     border-radius: 10px;    
     font-weight: 700;
     font-size: 22px;
@@ -260,7 +266,8 @@
     text-transform: uppercase;
     color: #6c0287;
     padding: 15px 50px;  
-    outline: none;    
+    outline: none;       
+    transition: outline .2s ease-in, background-color .2s ease-in;
 }
 
 .booking__btn:hover {
