@@ -35,6 +35,8 @@
     background-color: #fff;
   }
 
+
+
   .questions__item:nth-child(odd):hover .questions__plus {
     color:#fff; 
     background-color: #440F51;
@@ -59,17 +61,18 @@
     color:#440F51;
 }
 
-.questions__item:nth-child(even):active .questions__plus {    
-    color:#fff;
-    border: 2px solid #fff;
-    background-color: #440F51;
+.questions__plus-minus {
+    transition: color .2s ease-in;
 }
 
-.questions__item:nth-child(odd):active .questions__plus{
-    border: 2px solid #440F51;
-    color:#440F51;
-    background-color: #fff;
-}
+.questions__item:nth-child(odd):active .questions__plus-minus {
+    color: #440F51;    
+  }
+
+  .questions__item:nth-child(even):active .questions__plus-minus {
+    color: #fff;    
+  }
+
 
 .questions__title {
     margin-bottom: 40px;

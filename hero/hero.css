@@ -138,7 +138,7 @@
     line-height: 115%;
     color: #fff;     
     outline: none;
-    transition-duration: 0.25s;
+    transition-duration: .25s;
     transition-property:background-color;   
 }
 
