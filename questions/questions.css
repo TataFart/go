@@ -61,9 +61,6 @@
     color:#440F51;
 }
 
-.questions__plus-minus {
-    transition: color .2s ease-in;
-}
 
 .questions__item:nth-child(odd):active .questions__plus-minus {
     color: #440F51;    
