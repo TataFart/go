@@ -1,0 +1,17 @@
+:root {
+    --main-color: #fff;
+    --secondary-fucsia: #cd06ff;
+    --booking-bg: #440F51;
+    
+    --reviews-gradient: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
+    --footer-gradient: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.booking {
+    --booking-btn: #6c0287;
+}
+
+.footer {
+  --footer-hover: #EADEED;
+}
+

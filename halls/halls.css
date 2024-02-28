@@ -19,7 +19,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;    
-    color: #FFF;
+    color: var(--main-color);
     width: 100%;
     max-width: calc(50% - 20px);   
     padding:135px 0 134px;
@@ -54,7 +54,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;    
-    color: #FFF;
+    color: var(--main-color);
     width: 100%;
     max-width: calc(50% - 20px);   
     padding:135px 0 134px;
@@ -105,7 +105,7 @@
 }
 
 .halls__link:focus:after {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var( --secondary-fucsia);
 }
 
 .halls__link:active:after {

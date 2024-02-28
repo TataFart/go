@@ -28,6 +28,7 @@
 .reviews__author {
     float: left;
     margin-right: 20px;
+    position: relative;
 }
 
 .reviews__author-name {
@@ -43,6 +44,22 @@
     object-position: top 0 right 0;  
     display: inline-block;   
     vertical-align: middle;
+ 
+}
+
+.reviews__author::after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    background: var(--reviews-gradient);  
 }
 
 .reviews__text {         

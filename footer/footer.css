@@ -1,7 +1,7 @@
 .footer {   
     padding-top: 50px;
     padding-bottom: 13px;
-    background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);      
+    background: var(--footer-gradient);
 }
 
 
@@ -37,19 +37,19 @@
 
 .address__item-phone:hover,
 .address__item-mail:hover {
-    color: #eadeed;    
+    color:var(--footer-hover);    
 }
  
 
 .address__item:focus
 {    
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var( --secondary-fucsia);
 }
 
 .address__item-phone:active,
 
 .address__item-mail:active {
-    color: #eadeed;   
+    color:var(--footer-hover);  
 }
 
 
@@ -89,15 +89,15 @@
 }
 
 .social__link:hover {
-    color: #eadeed;    
+    color: var(--footer-hover);
 }
 
 .social__link:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var( --secondary-fucsia);
 }
 
 .social__icon:active {
-    color:#cd06ff;  
+    color:var( --secondary-fucsia);  
 }
 
 
@@ -149,13 +149,13 @@
 }
 
 .footer__developer-link:hover {
-    color: #eadeed;  
+    color:var(--footer-hover);
 }
 
 .footer__developer-link:focus{
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var( --secondary-fucsia);
 }
 
 .footer__developer-link:active {
-        color: #eadeed;  
+        color:var(--footer-hover);
     }

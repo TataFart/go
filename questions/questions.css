@@ -21,24 +21,24 @@
 
 .questions__item:nth-child(even){
     background-color: #440F51;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .questions__item:nth-child(odd){
-    background-color: #fff;
+    background-color: var(--main-color);
     color: #1C1A1A;
 }
 
 .questions__item:nth-child(even):hover .questions__plus {
 
     color: #440F51;  
-    background-color: #fff;
+    background-color: var(--main-color);
   }
 
 
 
   .questions__item:nth-child(odd):hover .questions__plus {
-    color:#fff; 
+    color:var(--main-color); 
     background-color: #440F51;
   }
 
@@ -52,8 +52,8 @@
 }
 
 .questions__plus_color_purple{    
-    color:#fff;
-    border: 2px solid #fff;
+    color:var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 .questions__plus_color_white {
@@ -67,7 +67,7 @@
   }
 
   .questions__item:nth-child(even):active .questions__plus-minus {
-    color: #fff;    
+    color: var(--main-color);    
   }
 
 

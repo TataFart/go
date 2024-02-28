@@ -1,6 +1,6 @@
 .hero {
    padding-top: 25px;  
-   padding-bottom: 50px;
+   padding-bottom: 120px;
 }
 
 .hero__content-container {
@@ -78,31 +78,31 @@
 
 .hero__down-icon {
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 1px solid var(--main-color);
     transition-duration: 0.2s;
     transition-property:background-color border-color color;
 }
 
 .hero__down-icon:hover {  
-    background-color: #fff;;
-    color:#cd06ff;
-    border-color: #fff;
+    background-color: var(--main-color);;
+    color:var( --secondary-fucsia);
+    border-color: var(--main-color);
 }
 
 .hero__down-icon:focus {  
-    background-color: #fff;;
-    color:#cd06ff;
-    border-color: #fff;
+    background-color: var(--main-color);;
+    color:var( --secondary-fucsia);
+    border-color: var(--main-color);
 }
 
 .hero__down:focus {
-   outline: 1px solid #cd06ff;
+   outline: 1px solid var( --secondary-fucsia);
 }
 
 .hero__down-icon:active {  
-    background-color:#cd06ff;
-    border-color: #cd06ff;
-    color:#fff;
+    background-color:var( --secondary-fucsia);
+    border-color: var( --secondary-fucsia);
+    color:var(--main-color);
 }
 
 .hero__info-text {
@@ -115,14 +115,14 @@
     font-weight: 900;
     font-size: 75px;
     font-variant: all-small-caps;
-    color: #cd06ff;
+    color: var( --secondary-fucsia);
     line-height: 115%;
 }
 
 .hero__strong-number {
     font-weight: 900;
     font-size: 100px;
-    color: #cd06ff;
+    color: var( --secondary-fucsia);
     line-height: 115%;
 }
 
@@ -136,7 +136,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 115%;
-    color: #fff;     
+    color: var(--main-color);     
     outline: none;
     transition-duration: .25s;
     transition-property:background-color;   
@@ -175,6 +175,7 @@
     column-gap: 20px;
     row-gap: 40px;    
     flex-wrap: wrap;
+    perspective: 300px;
 }
 
 .wehave__item {
@@ -190,12 +191,20 @@
     transform: scale(110%);
 }
 
+.wehave__item_down {
+    transform: translateY(70px);
+}
+
+.wehave__item_down:hover {
+    transform: translateY(70px) scale(110%);
+}
+
 .wehave__text {
     max-width: 300px;
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
-    color: #fff;
+    color: var(--main-color);
     min-height: 56px;
 }
 
