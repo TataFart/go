@@ -1,6 +1,6 @@
 .hall__banner {
     min-height: 750px;
-    background-size: covergit;
+    background-size: cover;
     object-fit: contain;
     display: flex;
     justify-content: center;
