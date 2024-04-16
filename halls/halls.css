@@ -1,33 +1,24 @@
 
 .halls__list {
     list-style: none;  
-    font-size: 0;  
-    margin: -10px;
+    font-size: 0;    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
-
-.halls__title {
-    margin-bottom: 60px;
-    text-align: center;
-    justify-content: center;
-    font-size: 40px;    
-    font-weight: 700;
-    line-height: 125%;
-    text-transform: uppercase;
-   }
-
    .halls__list-item{
-    position: relative;
-    display: inline-block;
-    vertical-align: top;    
+    position: relative;  
+    min-height: 349px;
     color: var(--main-color);
     width: 100%;
     max-width: calc(50% - 20px);   
-    padding:135px 0 134px;
-    text-align: center;    
+    display: flex;  
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    margin: 10px;  
+    background-repeat: no-repeat;     
     z-index: 5;
 }
 
@@ -50,22 +41,7 @@
     background-image: url(../halls/img/neon.jpg);
 }   
 
-.halls__list-item{
-    position: relative;
-    display: inline-block;
-    vertical-align: top;    
-    color: var(--main-color);
-    width: 100%;
-    max-width: calc(50% - 20px);   
-    padding:135px 0 134px;
-    text-align: center;    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 10px;  
-    z-index: 5;
-    
-}
+
 
 .halls__link {
     text-decoration: none;
@@ -111,4 +87,62 @@
 .halls__link:active:after {
     background-color:#321d3d71;
     
+}
+
+@media(max-width: 1240px) {
+  .halls {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .halls__link {
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  .halls__list-item {        
+    min-height: 267px;
+  }
+}
+
+@media(max-width: 910px) {
+    .halls {
+       
+        padding-bottom: 32px;
+      }
+    
+         
+      .halls__list-item {        
+        min-height: 200px;
+      }
+
+      .halls__link {
+        font-size: 40px;
+        line-height: 125%;
+      }
+}
+
+@media(max-width: 660px) {
+    .halls {
+      padding: 0 15px;
+      }
+    
+      .halls__title {
+        font-size: 14px;
+        line-height: 129%;
+        margin-bottom: 15px;
+      }
+    
+      .halls__list {
+        gap: 10px;
+      }
+      .halls__link {
+        font-size: 26px;
+        line-height: 131%;
+        max-width: 100px;
+      }
+      .halls__list-item {
+        max-width: 100%;
+        min-height: 168px;
+      }
 }

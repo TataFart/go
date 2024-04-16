@@ -1,6 +1,7 @@
 html {
     position: relative;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -97,7 +98,7 @@ h1, h2, h3, p, figure, fieldset {
     margin:0;
 }
 
-.title {
+.section__title {
     margin-bottom: 50px;
     text-align: center;
     justify-content: center;
@@ -113,4 +114,46 @@ h1, h2, h3, p, figure, fieldset {
     list-style: none;    
 }
 
+@media(max-width: 1240px) {
+    .container {
+        max-width: 964px;
+    }
+    .section {
+        padding: 35px 0;
+    }
 
+    .section__title {
+        font-size: 30px;
+        line-height: 133%;
+        margin-bottom: 26px;
+    }
+}
+
+@media(max-width: 910px) {
+    .container {
+        max-width: 728px;
+        padding: 0 20px;
+    }
+   
+    .section__title {
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 30px;}
+}
+
+@media(max-width: 660px) {
+    .container {
+        max-width: 300px;
+        padding: 0 10px;
+    }
+    .section {
+        padding: 15px 0;
+    }
+
+    .section__title{
+        font-size: 14px;
+        line-height: 129%;
+        margin-bottom: 15px;
+    }
+
+}

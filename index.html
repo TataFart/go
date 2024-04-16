@@ -24,6 +24,13 @@
 
     <header class="header">
         <div class="container header__container">
+            <button type="button" class="header__menu-btn">
+                <svg class="header__menu-btn-icon" width="54" height="29" viewBox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="54" height="5" rx="2" fill="#6C0287"/>
+                    <rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
+                    <rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
+                    </svg>
+            </button>
             <img class="logo" src="img/logo.svg" alt="логотип">
             
             <nav class="navigation">
@@ -43,7 +50,7 @@
 
      <main  class="main">
                   
-             <section class="hero">                       
+             <section class=" section hero">                       
                 <div class="container">
                    
                     <div class="hero__content-container">
@@ -82,8 +89,10 @@
                                                            
                     </div>
 
+                     
+
                     <div class="wehave" id="wehave">
-                        <h2 class="wehave__title">У нас есть всё для классного отдыха с друзьями</h2>
+                        <h2 class="section__title">У нас есть всё для классного отдыха с друзьями</h2>
 
                         <ul class="wehave__list">
                             <li class="wehave__item wehave__item_add_vr">
@@ -112,9 +121,10 @@
 
                                                     
             </section>
+           
               <section class="section halls" id="halls">
                         <div class="container">
-                            <h2 class="halls__title">Наши залы</h2>
+                            <h2 class="section__title">Наши залы</h2>
 
                             <ul class="halls__list">
                                 <li class="halls__list-item halls__list-item_theme_vibes80"><a class="halls__link" href="vibes.html">80`s vibes</a></li>
@@ -129,7 +139,7 @@
                <section class="section" >
                     <div class="booking" id="booking">
                         <div class="container">
-                            <h2 class="booking__title">Забронировать зал просто</h2>
+                            <h2 class="section__title">Забронировать зал просто</h2>
                             <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post" name="orderForm">
                                 <fieldset class="booking__fieldset booking__fieldset_halls">
                                     <legend class="booking__legend booking__legend_align_center">Выбери зал</legend>
@@ -204,7 +214,7 @@
                                                     <label for="" class="booking__date-label"><label for="|" class="|"><input placeholder="Время" class="booking__date-input" type="time"  id="time"  required></label></label>
                                                 </div>
                         
-                                                <input placeholder="Количество человек" class="booking__info-input" type="number" id="amount" required>
+                                                <input placeholder="Количество человек" class="booking__info-input booking__info-input-amount" type="number" id="amount" required>
                                             </div>
                         
                                             <div class="booking__group booking__group_name">
@@ -243,35 +253,37 @@
                     </div>
     
                </section>
-    
+
                <section class="section about" id="about">
                     <div class="container">
 
-                        <h2 class="about__title">O нас</h2>
+                        <h2 class="section__title">O нас</h2>
 
-                        <img class="about__img" src="./about/collage-about.jpg" alt="">
-                     
+                        <div class="about__content">
+
                             
-                        <div class="about__contant">
-                            <div class="about__text-wrap">
-                                       <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
-                                        в центральной части города.
-                                       </p>
-                                       <p class="about__text"> Каждый день мы стараемся создавать
-                                         для вас самую лучшую игровую атмосферу
-                                         и радовать Вас топовыми игровыми разработками
-                                         со всего мира.</p>
-                            </div>
+                            <img class="about__img" src="./about/collage-about.jpg" alt="">
+                                                 
                             
-                            <blockquote class="about__blockquote">
-                               <p class="about__blockquote-text">GAME OVER &#8212;
-                                  это место незабываемых впечатлений </p>
-                                <div class="author">
-                                    <img class="about__author-foto" src="./about/foto-founder-abakshin.jpg" alt="фото Аркадия Абракшина">
-                                    <p class="about__author-text">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
-                               </div>
-                            </blockquote>
+                                <div class="about__text-wrap">
+                                           <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
+                                            в центральной части города.
+                                           </p>
+                                           <p class="about__text"> Каждый день мы стараемся создавать
+                                             для вас самую лучшую игровую атмосферу
+                                             и радовать Вас топовыми игровыми разработками со всего мира.</p>
+                                </div>
+                            
+                                <blockquote class="about__blockquote">
+                                   <p class="about__blockquote-text">GAME OVER &#8212;
+                                      это место незабываемых впечатлений </p>
+                                    <div class="author">
+                                        <img class="about__author-foto" src="./about/foto-founder-abakshin.jpg" alt="фото Аркадия Абракшина">
+                                        <p class="about__author-text">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
+                                   </div>
+                                </blockquote>
                         </div>
+                      
                        
                           
                     </div>
@@ -281,7 +293,7 @@
                <section class="section reviews" id="reviews">
                 <div class="container">
 
-                    <h2 class="reviews__title">Отзывы посетителей</h2>
+                    <h2 class="section__title">Отзывы посетителей</h2>
 
                     <ul class="reviews__list">
                         
@@ -321,21 +333,22 @@
                     </ul>
                 </div>
                </section>
-    
+  
                <section class="section questions" id="qustions">
                     <div class="container">
 
-                        <h2 class="questions__title">Частые вопросы</h2>
+                        <h2 class="section__title">Частые вопросы</h2>
 
                         <ul class="questions__list">
-                            <li class="questions__item">Можно ли забронировать комнату онлайн?
+                            <li class="questions__item">
+                                <p class="questions__item-text">Можно ли забронировать комнату онлайн?</p>
                                 <svg class="questions__plus questions__plus_color_white" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="questions__plus-minus" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
                                     <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />                                  
                                   </svg>
                             </li>
 
-                            <li class="questions__item">Могул ли мне вернуть деньги за бронь?
+                            <li class="questions__item"><p class="questions__item-text">Могул ли мне вернуть деньги за бронь?</p>
                                 <svg class="questions__plus questions__plus_color_purple" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="questions__plus-minus" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor"/>
                                     <path d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor"/>                              
@@ -371,29 +384,39 @@
                </section>
                
         </main>
-
-        <footer class="footer" id="contacts">
+ 
+        <footer class="section footer" id="contacts">
             <div class="container">
 
-                <h2 class="footer__title">Контакты</h2>
+                <h2 class="section__title">Контакты</h2>
 
                <div class="footer__content">
                     
                     <div class="footer__content-info">
+
                         <div class="footer__content-info-inner">
     
                             <address class="address">
-                                
+                                <ul class="adress__list">
                                    
-                                    <p href="#" class="address__item address__item-loco">г.Москва
-                                            ул. Аквамарина, 16</p> 
+                                    <li class="address__item address__item-loco">
+                                                                              
+                                        <p class="address__link address__link-address">г.Москва
+                                                ул. Усачёва, 29 к3</p>
+                                    </li>
                               
                                
-                                    <a class="address__item address__item-phone" href="tel:89509302893">8(950)930-28-93</a>
+                                    <li class="address__item address__item-phone">
+                                                                             
+                                        <a class="address__link address__link-phone" href="tel:89509302893">8 (950) 930-28-93</a>
+                                    </li>
                              
-                               
-                                    <a class="address__item address__item-mail" href="mailto:GameOver@gmail.com" target="_blank">GameOver@gmail.com</a>
-                                
+                                    <li class="address__item address__item-mail">
+                                                                                   
+                                            <a class="address__link address__link-mail" href="mailto:GameOver@gmail.com" target="_blank">GameOver@gmail.com</a>
+                                        </li>
+
+                                </ul>
                             </address>
     
                             <ul class="social">
@@ -452,7 +475,7 @@
 
              </div>   
 
-        </footer>
+        </footer> 
 
 </body>
 </html>

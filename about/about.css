@@ -1,8 +1,18 @@
+.about__content {
+    display:grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas: "img text"
+                          "img quote";
+    column-gap: 80px;                     
+}
 
 .about__blockquote {    
     font-size: 44px;
-    line-height: 113.636%;  
-       
+    line-height: 113.636%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: quote;  
 }
 
 .about__blockquote-text {
@@ -11,10 +21,9 @@
     font-weight: 400;
     line-height: 113.636%;
     position: relative;
-    padding-left: 31px;
+    padding-left: 9px;
     white-space: pre-line;
-    margin-bottom: 40px;  
-         
+    margin-bottom: 40px;           
 }
 
 .about__blockquote-text::before {
@@ -22,36 +31,38 @@
     color: #6C0287;    
     font-weight: 900;
     line-height: 50px;      
-    position: absolute;
+    position:relative;
     top: -8px;
-    left: 0;
+    left: -8px;
 }
 
 .about__blockquote-text::after {
     content: "\201D";
     color: #6C0287;    
     font-weight: 900;
-    line-height: 50px;
-     
+    line-height: 50px;     
 }
+
 
 .about__author-text {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    max-width: 260px;
+    max-width: 250px;
     display: inline-block;
     vertical-align: middle;
     text-align: left;
 }
 
+.about__img {
+    grid-area: img; 
+}
 
 .about__author-foto {
     object-fit:cover;
     height: 80px;
-    width: 80px;
-    margin-right: 35px;
+    width: 80px;   
     border-radius: 50px;
     object-position: bottom -35px right 0px;  
     display: inline-block;   
@@ -67,31 +78,133 @@
     margin-bottom: 28px;     
 }
 
-.about__text-wrap {
-    margin-bottom: 48px;
-}
 
-.about__title {
-    margin-bottom: 50px;
-    text-align: center;
-    justify-content: center;    
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 125%;
-    text-transform: uppercase;
-}
+.about__text-wrap {
+     
+    max-width: 500px;
+    grid-area: text;
+    display: flex; 
+    flex-direction: column;  
+ }
 
 .about__img {    
-    display: inline-block;
-    vertical-align: top;  
-    max-width: calc(100% - 530px);       
-}
-
-.about__contant {
-    max-width: 500px;
-    float: right;
+          grid-area: img;  
 }
 
 .author {
     text-align: right;
+    display: flex;
+    gap:35px;
+    justify-content: end;
+  
+}
+
+@media(max-width: 1240px) {
+
+    .about__content {
+    column-gap: 40px;
+    row-gap: 26px;
+    grid-template-columns: 1.3fr 1fr;
+ }
+ 
+    .about__text {
+    font-size: 18px;
+    line-height: 133%;
+    margin-bottom: 26px;
+    }
+
+  
+    .about__blockquote-text {
+    font-size: 30px;
+    line-height: 120%;
+    white-space:inherit;
+    margin-bottom: 13px; 
+    max-width: 600px; 
+    }
+
+    .author {
+        gap:25px;
+    }
+
+    .about__author-text {
+    font-size: 18px;
+    line-height: 144%;
+    max-width: 215px;
+    }
+
+    .about__author-foto {     
+    height: 70px;
+    width: 70px;}
+}
+
+@media(max-width: 910px) {  
+
+    .about__content {
+        grid-template-areas: "img text"
+        "quote quote";
+        column-gap: 28px;
+        row-gap: 30px;
+        grid-template-columns: 1.4fr 1fr;
+    }
+    .about__text-wrap {       
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__text-wrap {  
+              max-width: 278px;      
+    }
+
+     .about__text {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 15px;
+        white-space: inherit;
+    }
+
+     .about__blockquote {
+        max-width: 688px;       
+     }
+}
+
+@media(max-width: 660px) {
+
+    .about__content {
+        grid-template-areas: "text text"
+        "img img"
+        "quote quote";
+        row-gap: 15px;
+    }
+   
+    
+    .about__text {
+        font-size: 12px;
+        line-height: 133%;
+        margin-bottom: 15px;
+    }
+
+    
+     .about__blockquote-text {
+        font-size: 18px;
+        line-height: 144%;        
+        margin-bottom: 13px; 
+        padding-left: 8px; 
+    }
+
+    .about__author-text {
+        font-size: 12px;
+        line-height: 133%;
+        max-width: 161px;
+    }
+    .author {
+       justify-content: flex-start;
+        gap: 11px;
+        align-items: center;
+    }
+    .about__author-foto {
+        height: 56px;
+        width: 56px;
+        margin-right: 0;
+        object-position: bottom -25px right 0px; 
+    }
 }

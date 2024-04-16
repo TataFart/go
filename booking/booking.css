@@ -116,7 +116,7 @@
     
 .booking__fieldset_halls {
     display: flex;
-    gap: 60px;
+    gap: 29px;
     align-self: center;
     justify-content: space-between;
     margin-bottom: 60px;
@@ -180,7 +180,7 @@
 .booking__group {
     display: flex;
     flex-direction: column;   
-    gap: 36px;   
+    gap: 20px;   
     align-self: end;  
    
 }
@@ -202,7 +202,8 @@
 .booking__fieldset-info {
     display: flex;
     gap: 50px;
-    justify-content: space-between;
+    justify-content:;
+    /* width: 100%; */
     
 }
 
@@ -297,3 +298,255 @@
     position: absolute;
 }
 
+@media(max-width: 1240px) {
+    .booking {
+        padding: 60px 0;
+    }
+
+    .booking__title {
+        font-size: 30px;
+        line-height: 133%;
+        margin-bottom: 25px;
+    }
+
+    .booking__radio-label_hall {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+   .booking__fieldset_data {
+    max-width: 904px;
+   }
+
+   .booking__group_name {
+    max-width: 251px;
+   }
+
+   .booking__group_date {
+    flex-basis: 280px;
+}
+
+.booking__group_contacts{
+    row-gap: 14px;
+    flex-basis: 250px;
+    max-width: 251px;
+ }
+
+ .booking__btn {
+    font-size: 18px;
+line-height: 133%;
+padding: 13px 45px; 
+ }
+
+ .booking__fieldset_entertainment {
+    justify-content: space-between;
+ }
+}
+
+@media(max-width: 910px) {
+    .booking {
+        padding: 50px 0;
+    }
+
+    .booking__title {
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+
+    .booking__radio-label_hall {
+        font-size: 16px;
+        line-height: 125%;
+        padding: 6px 20px;
+    }
+
+    .booking__fieldset_data {
+        max-width: 688px;
+       }
+
+       .booking__fieldset_halls {
+        margin-bottom: 50px;
+       }
+
+       .booking__fieldset_entertainment {
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 40px;
+        margin-bottom: 50px;
+       }
+       .booking__radio-label {
+        line-height: 40px;
+       }
+       .booking__radio-input {
+        height: 40px;
+        width: 40px;
+        top: 13px;
+       }
+
+       .booking__ch-box-input:before 
+       {
+        width: 40px;
+            height: 40px;
+       }
+       
+       .booking__ch-box-input:after {
+        top: 10px;
+        left: 8px;
+        width: 25px;
+        height: 15px;
+       }
+
+       .booking__ch-box-input {
+        margin-left: -60px;
+       }
+
+       .booking__ch-box-label {
+        line-height: 40px;
+        padding-left: 60px;
+       }
+
+       .booking__group_date {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 688px;       
+     
+       }
+
+       .booking__group_contacts {
+        max-width: 300px;
+        flex-basis: 300px;
+       }
+
+       .booking__group_name {
+        max-width: 280px;
+       }
+
+       .booking__date {
+        max-width: 280px;
+        gap: 14px;
+       }
+
+       .booking__fieldset-info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 50px;
+        column-gap: 15px;
+       }
+
+       
+       .booking__info-input-amount {
+        flex-basis: 300px;
+       }
+
+       .booking__btn {
+        padding: 16px 50px;
+        font-size: 22px;
+        line-height: 127%;
+       }
+}
+
+@media(max-width: 660px) {
+    .booking__title {
+        font-size: 14px;
+line-height: 143%;
+margin-bottom: 13px;
+    }
+
+    .booking {
+        padding: 30px 0;
+    }
+ 
+
+    .booking__legend {
+        font-size: 13px;
+line-height: 129%;
+margin-bottom: 15px;
+    }
+
+    .booking__fieldset_halls {
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap:15px;
+       }
+.booking__fieldset_column {
+    gap: 15px;
+}
+       .booking__fieldset_entertainment {
+        flex-direction: column;
+        row-gap: 25px;
+        margin-bottom: 30px;
+       }
+
+       .booking__group_date {
+        flex-direction: column;
+       }
+
+       .booking__radio-input {
+        height: 40px;
+        width: 40px;
+        top: 13px;
+       }
+
+       .booking__ch-box-label {
+        padding-left: 50px;
+        line-height: 30px;
+        font-size: 16px; 
+       }
+
+       .booking__ch-box-input {
+        margin-left: -50px;    
+       }
+
+       .booking__ch-box-input:before 
+       {
+        width: 30px;
+            height: 30px;
+       }
+       
+       .booking__ch-box-input:after {
+        top: 6px;
+        left: 5px;
+        width: 20px;
+        height: 10px;
+       }
+
+       .booking__radio-label {
+        line-height: 30px;
+        font-size: 16px; 
+       }
+
+       .booking__radio-input {
+        height: 30px;
+        width: 30px;
+        top: 8px;
+       }
+
+       .booking__radio-label_hall {
+        font-size: 14px;
+        line-height: 129%;
+        padding: 6px 18px;
+        flex-basis: 130px;
+    }
+    /* .booking__date {
+        flex-basis: 280px;
+        max-height: 52px;
+    } */
+
+    .booking__info-input-amount {
+        flex-basis: 280px;
+        max-width: 280px;
+        max-height: 52px;
+    }
+    .booking__group_contacts {
+        max-width: 280px;
+        flex-basis: 280px;
+       }
+    
+    .booking__btn {
+        padding: 17px 58px;
+        font-size: 18px;
+        line-height: 144%;
+       }
+
+
+}

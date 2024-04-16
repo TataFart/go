@@ -1,0 +1,220 @@
+.hall__banner {
+    min-height: 750px;
+    background-size: contain;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.hall__banner_theme_neon {
+    background-image: url(./img/banner-neon.png);
+}
+
+.hall__banner_theme_vibes{
+    background-image: url(./img/banner-80vibes.png);
+}
+
+.hall__banner_theme_starwars {
+    background-image: url(./img/banner-starwars.png);
+  
+}
+
+.hall__banner_theme_wildwest{
+    background-image: url(./img/banner-wildwest.png);
+}
+
+.back {
+    margin-bottom: 20px;
+}
+
+.about__content_page_halls {
+    grid-template-areas: "img text";
+}
+
+.about__text-wrap_page_halls {
+    justify-content: center;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 89%;
+    text-transform: uppercase;
+}
+
+.hall__back-link::before {
+    content:"";
+   margin-right: 14px;
+  background-image: url(./img/back-arrow.svg);
+  background-size: contain;
+  background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 30px;
+    
+}
+
+.hall__back-link {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 127%;
+}
+
+.hall__text {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.hall__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+
+
+
+.halls__list_page_halls {
+    flex-wrap: nowrap;
+
+}
+
+.halls__list-item_page_halls {
+    max-width: 380px;
+    min-height: 229px;
+}
+
+.halls__link {
+    font-size: 30px;
+    max-width: 120px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.halls__link_width_in-row {
+    max-width: 170px;
+}
+
+@media(max-width: 1240px) {
+
+    .hall__text {
+        font-size: 20px;
+    }
+
+    .hall__banner {
+        margin-bottom: 70px;
+        min-height: 534px;
+    }
+
+    .halls__link {
+        font-size: 30px;
+        line-height: 120%;
+      }
+
+      .halls__list-item {        
+        min-height: 172px;
+      }
+      
+  
+}
+
+@media(max-width: 910px) {
+
+    .main__title {
+        font-size: 60px;
+        line-height: 120%;
+    }
+
+    .hall__text {
+        font-size: 16px;
+    }
+    
+    .hall__banner {
+        margin-bottom: 60px;
+        min-height: 402px;
+    }
+
+    .hall__back-link{
+        font-size: 16px;
+    }
+
+    .halls__list-item {        
+        min-height: 134px;
+      }
+
+      .halls__link {
+        font-size: 20px;
+        line-height: 120%;
+      }
+
+      .about__text {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 15px;
+      }
+
+   
+
+}
+
+@media(max-width: 660px) {
+
+    .hall__back-link::before {
+        width: 16px;
+        height: 8px;
+    }
+    .main__title {
+        font-size: 30px;
+           }
+
+    .back {
+        margin-bottom: 15px;
+        }
+   
+    .halls__list {
+        flex-direction: column;
+    }
+
+    .hall__banner {
+        margin-bottom: 30px;
+        min-height: 168px;
+    }
+
+    .hall__back-link{
+        font-size: 12px;
+    }
+
+    .halls__list-item {        
+        min-height: 134px;
+      }
+
+      .halls__link {
+        font-size: 20px;
+        line-height: 120%;
+        max-width: 100px;
+      } 
+
+      .about__content_page_halls {
+        grid-template-areas: "img img"
+        " text text";
+    }
+
+    
+
+    .about-hall__text {
+        font-size: 12px;
+        line-height: 133%;
+        margin-bottom: 15px;
+    }
+}
