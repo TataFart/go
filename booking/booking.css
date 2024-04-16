@@ -48,12 +48,7 @@
      text-align: center;
 }
 
-/* .booking__radio-input {
-    appearance: none;               
-    -webkit-appearance: none;
-    -moz-appearance: none; 
-    position: absolute;
-} */
+
 .booking__radio-input:checked { /* не работает. чтобы был квадратик фокуса пришлось пожертвовать собственным :checked*/
     border: 3px solid var(--main-color);
     background-color:#440f51; /* на мой вкус лучше без этого квадратика, но с checked d wdtn*/
@@ -202,8 +197,7 @@
 .booking__fieldset-info {
     display: flex;
     gap: 50px;
-    justify-content:;
-    /* width: 100%; */
+   
     
 }
 
