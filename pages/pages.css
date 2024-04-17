@@ -46,24 +46,41 @@
     text-transform: uppercase;
 }
 
-.hall__back-link::before {
-    content:"";
-   margin-right: 14px;
-  background-image: url(./img/back-arrow.svg);
-  background-size: contain;
-  background-position: center;
-    display: inline-block;
-    vertical-align: middle;
-    height: 16px;
-    width: 30px;
-    
-}
+
 
 .hall__back-link {
     font-weight: 700;
     font-size: 22px;
     line-height: 127%;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    text-decoration: none;
+    color: inherit;
+    outline: none; 
+    width: max-content;
+    transition: color .25s ease-in;
+   
 }
+
+.hall__back-link-arrow {
+    color:inherit;
+}
+
+.hall__back-link:hover {
+color: var( --secondary-fucsia);
+}
+
+.hall__back-link:focus {
+    outline: 2px solid var( --secondary-fucsia);
+}
+
+
+.hall__back-link:active {
+    color: var( --secondary-fucsia);
+}
+
 
 .hall__text {
     margin: 0 auto;
@@ -95,7 +112,7 @@
     min-height: 229px;
 }
 
-.halls__link {
+.halls__link_place_pages {
     font-size: 30px;
     max-width: 120px;
     line-height: 120%;
@@ -117,7 +134,7 @@
         min-height: 534px;
     }
 
-    .halls__link {
+    .halls__link_place_pages{
         font-size: 30px;
         line-height: 120%;
       }
@@ -153,7 +170,7 @@
         min-height: 134px;
       }
 
-      .halls__link {
+      .halls__link_place_pages {
         font-size: 20px;
         line-height: 120%;
       }
@@ -199,7 +216,7 @@
         min-height: 134px;
       }
 
-      .halls__link {
+      .halls__link_place_pages{
         font-size: 20px;
         line-height: 120%;
         max-width: 100px;

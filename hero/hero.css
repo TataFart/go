@@ -138,6 +138,7 @@
     padding: 25px 69px;
     text-transform: uppercase;
     background-color:var(--booking-btn);
+    box-shadow: 2px 2px 20px var(--booking-btn);
     font-weight: 700;
     font-size: 26px;
     line-height: 115%;

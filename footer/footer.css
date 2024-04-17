@@ -69,7 +69,7 @@ background-image: url(./icons/phone-call.svg);
 }
  
 
-.address__item:focus
+.address__link:focus
 {    
     outline: 1px solid var( --secondary-fucsia);
 }
