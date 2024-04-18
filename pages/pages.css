@@ -64,9 +64,7 @@
    
 }
 
-.hall__back-link-arrow {
-    color:inherit;
-}
+
 
 .hall__back-link:hover {
 color: var( --secondary-fucsia);

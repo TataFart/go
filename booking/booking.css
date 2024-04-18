@@ -90,14 +90,14 @@
 }
 
 .booking__radio-label_hall:hover {    
-    background-color: #eadeed;;
+    background-color: #eadeed;
     outline: 2px solid var(--booking-btn);
 }
 
-.booking__radio-label_hall:focus {
-    background-color: var(--main-color); 
-    color: #000;
+.booking__radio-input-hall:focus+.booking__radio-label_hall  {
+    background-color: var(--main-color);    
     outline: 2px solid var(--booking-btn);
+    
 }
 
 .booking__radio-input-hall:active+ .booking__radio-label_hall,
