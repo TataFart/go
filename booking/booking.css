@@ -83,6 +83,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #000;
+    
     border: 2px solid transparent;
     flex-basis: 240px;    
     transition: color .25s ease-in, outline .25s ease-in, background-color .25s ease-in;   
@@ -96,8 +97,8 @@
 
 .booking__radio-input-hall:focus+.booking__radio-label_hall  {
     background-color: var(--main-color);    
-    outline: 2px solid var(--booking-btn);
-    
+    outline: 3px solid var(--booking-btn);
+    border-color: var(--booking-btn) ;
 }
 
 .booking__radio-input-hall:active+ .booking__radio-label_hall,
@@ -204,6 +205,7 @@
     display: flex;
     gap: 32px;
 }
+
 
 .booking__date-input {
     
