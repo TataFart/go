@@ -89,6 +89,7 @@ transition: opacity 0.3s ease-in;
 
 .questions__item:hover .questions__plus {
     transform: rotate(180deg);
+
 }
 
 .questions__item:active .questions__plus-minus {
@@ -97,6 +98,11 @@ transition: opacity 0.3s ease-in;
 
   .questions__btn:focus .questions__plus-minus { 
     opacity: 0;    
+   }
+
+   .questions__btn:hover .questions__plus-minus { 
+    opacity: 0;    
+  
    }
   
 
